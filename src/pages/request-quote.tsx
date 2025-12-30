@@ -234,7 +234,7 @@ const RequestQuote: React.FC = () => {
                 <span className="font-semibold">Email:</span> info@mi-pal.com
               </p>
               <p className="text-gray-600">
-                <span className="font-semibold">Phone:</span> +234 805 555 3313
+                <span className="font-semibold">Phone:</span> +234 805 5553 313
               </p>
             </div>
           </div>
