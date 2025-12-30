@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
           <h3 className="font-semibold">Contact Information</h3>
           <div className="mt-2 space-y-2 font-inter">
             <p>Email: info@mi-pal.com</p>
-            <p>Phone: +234 704 301 7567</p>
+            <p>Phone: +234 805 5553 313</p>
             <p>Address: 18B, Zainab Street, Medina Estate, Gbagada, Lagos</p>
             <div>
               <p>
