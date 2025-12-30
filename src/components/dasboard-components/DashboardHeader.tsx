@@ -51,7 +51,10 @@ export default function DashboardHeader({ sidebarOpen = false, onSidebarToggle }
       try {
         setLoading(true);
         const userEmail = localStorage.getItem('userEmail');
-        const userRole = localStorage.getItem('userRole') || 'user';
+        const userRoleFromStorage = localStorage.getItem('userRole') || 'user';
+
+        // Update the userRole state with the value from localStorage
+        setUserRole(userRoleFromStorage as 'user' | 'admin' | 'manager');
 
         if (!userEmail) {
           setLoading(false);
@@ -70,7 +73,7 @@ export default function DashboardHeader({ sidebarOpen = false, onSidebarToggle }
         if (currentUser) {
           setUser({
             ...currentUser,
-            role: (userRole as 'user' | 'admin' | 'manager') || 'user',
+            role: (userRoleFromStorage as 'user' | 'admin' | 'manager') || 'user',
           });
         }
       } catch (error) {
