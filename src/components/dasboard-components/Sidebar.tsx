@@ -497,7 +497,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
           <div className="fixed inset-0 bg-black/50" onClick={onClose} />
 
           {/* Mobile Sidebar */}
-          <nav className="relative z-50 h-full w-64 bg-gray-900 border-r border-gray-800 flex flex-col flex-shrink-0 overflow-y-auto">
+          <nav className="relative z-50 h-full w-[80%] bg-gray-900 border-r border-gray-800 flex flex-col flex-shrink-0 overflow-y-auto">
             <div className="py-6 px-4 flex flex-col h-full">
               {/* Header with Close Button */}
               <div className="flex items-center justify-between mb-6">
