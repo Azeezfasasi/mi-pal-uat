@@ -18,11 +18,8 @@ function Navbar() {
 
       <div className="flex gap-4">
         <Link href={"/request-quote"} className="hidden lg:block">
-          <button className="bg-[#EB5017] p-3 text-white">Request Quote</button>
+          <button className="bg-[#EB5017] p-3 text-white lg:rounded-md">Request Quote</button>
         </Link>
-        {/* <Link href={"/contact"} className="hidden lg:block">
-          <button className="bg-[#EB5017] p-3 text-white">Contact us</button>
-        </Link> */}
       </div>
     </nav>
   );
